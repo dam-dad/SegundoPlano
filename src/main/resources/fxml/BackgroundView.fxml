@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox fx:id="view" alignment="CENTER" prefHeight="200.0" prefWidth="320.0" spacing="5.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1">
+   <children>
+      <Label fx:id="estadoLabel" text="Estado" />
+      <ProgressBar fx:id="progresoBar" prefWidth="200.0" progress="0.0" />
+      <HBox alignment="CENTER" spacing="5.0">
+         <children>
+            <Button fx:id="iniciarButton" defaultButton="true" mnemonicParsing="false" onAction="#onIniciarAction" text="Iniciar" />
+            <Button fx:id="detenerButton" cancelButton="true" layoutX="146.0" layoutY="10.0" mnemonicParsing="false" onAction="#onDetenerAction" text="Detener" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
